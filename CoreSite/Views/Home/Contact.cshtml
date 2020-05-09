@@ -1,0 +1,36 @@
+﻿@{ 
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>@ViewData["Title"] - CoreSite</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+	@*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />*@
+</head>
+<body>
+
+	<div class="container body-content">
+		<h2>@ViewData["Message"]</h2>
+
+		<guh></guh>
+	</div>
+
+	<script src="~/lib/core-js/client/shim.min.js"></script>
+	<script src="~/lib/zone.js/dist/zone.js"></script>
+
+	<script src="~/lib/systemjs/dist/system.src.js"></script>
+	<script src="~/system.config.js"></script>
+
+	<script>
+		(function () {
+			SystemJS.import('/scripts/main').then(null, console.error.bind(console));
+		})();
+	</script>
+
+</body>
+</html>

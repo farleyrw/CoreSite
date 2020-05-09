@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"noEmitOnError": true,
+		"experimentalDecorators": true,
+		"allowJs": true,
+		"removeComments": false,
+		"sourceMap": true,
+		"module": "commonjs",
+		"target": "es2015",
+		"moduleResolution": "node"
+	},
+	"compileOnSave": true,
+	"exclude": [
+		"node_modules",
+		"wwwroot"
+	],
+	"include": [ "./" ]
+}
